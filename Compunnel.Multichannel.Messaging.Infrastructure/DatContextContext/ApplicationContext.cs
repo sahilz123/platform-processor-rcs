@@ -37,11 +37,8 @@ namespace Compunnel.Multichannel.Messaging.Infrastructure.DatContextContext
 
             modelBuilder.Entity<TokenData>(e => e.ToTable("OrgConfiguration"));
             modelBuilder.Entity<TokenData>(entity =>
-            {
-
-                entity.Property(e => e.Twilio_Sid).IsRequired().HasColumnName("twilio_sid");
-                entity.Property(e => e.Twilio_Auth).HasColumnName("twilio_auth");
-                entity.Property(e => e.Twilio_Vid).HasColumnName("twilio_vid");
+            {                
+                entity.Property(e => e.RCS_Token).HasColumnName("rcs_token");
                 entity.Property(e => e.OrgId).HasColumnName("org_id");
             });
 

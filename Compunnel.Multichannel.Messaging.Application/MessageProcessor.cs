@@ -6,14 +6,12 @@ namespace Compunnel.Multichannel.Messaging.Application
 {
     public class MessageProcessor : IMessageProcessor
     {
-        //readonly ITwilioService _twilioService;
         readonly IMessageRepository _messageRepository;
         readonly ITokenRepository _tokenRepository;
         readonly ILogger<MessageProcessor> _logger;
 
         public MessageProcessor( IMessageRepository messageRepository, ITokenRepository tokenRepository, ILogger<MessageProcessor> logger)
         {
-            //_twilioService = twilioService;
             _messageRepository = messageRepository;
             _tokenRepository = tokenRepository;
             _logger = logger;

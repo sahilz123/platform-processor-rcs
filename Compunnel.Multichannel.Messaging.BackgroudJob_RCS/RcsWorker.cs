@@ -2,7 +2,7 @@ using Compunnel.Multichannel.Messaging.Application.Interface;
 using Compunnel.Multichannel.Messaging.Domain;
 using System.Threading.Channels;
 
-namespace Compunnel.Multichannel.Messaging.BackgroudJob_RCS
+namespace Compunnel.Multichannel.Messaging.BackgroudJob.Host_RCS
 {
     public class RcsWorker : BackgroundService
     {

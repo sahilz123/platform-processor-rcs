@@ -1,6 +1,6 @@
 using Compunnel.Multichannel.Messaging.Application;
 using Compunnel.Multichannel.Messaging.Application.Interface;
-using Compunnel.Multichannel.Messaging.BackgroudJob_RCS;
+using Compunnel.Multichannel.Messaging.BackgroudJob.Host_RCS;
 using Compunnel.Multichannel.Messaging.Domain;
 using Compunnel.Multichannel.Messaging.Infrastructure.Data;
 using Compunnel.Multichannel.Messaging.Infrastructure.DatContextContext;

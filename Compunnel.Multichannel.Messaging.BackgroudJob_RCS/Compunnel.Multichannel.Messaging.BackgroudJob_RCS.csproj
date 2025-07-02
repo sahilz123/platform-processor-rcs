@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>dotnet-Compunnel.Multichannel.Messaging.BackgroudJob_RCS-d3f40d12-53c7-4104-9e9a-0dce9f9abafb</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="6.0.1" />
+	  <PackageReference Include="Serilog.Extensions.Hosting" Version="7.0.0" />
+	  <PackageReference Include="Serilog.Settings.Configuration" Version="7.0.0" />
+	  <PackageReference Include="Serilog.Sinks.File" Version="6.0.0" />  
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Compunnel.Multichannel.Messaging.Application\Compunnel.Multichannel.Messaging.Application.csproj" />
+    <ProjectReference Include="..\Compunnel.Multichannel.Messaging.Domain\Compunnel.Multichannel.Messaging.Domain.csproj" />
+    <ProjectReference Include="..\Compunnel.Multichannel.Messaging.Infrastructure\Compunnel.Multichannel.Messaging.Infrastructure.csproj" />
+  </ItemGroup>
+</Project>

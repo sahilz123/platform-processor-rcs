@@ -1,0 +1,11 @@
+﻿{
+  "profiles": {
+    "Compunnel.Multichannel.Messaging.BackgroudJob_RCS": {
+      "commandName": "Project",
+      "dotnetRunMessages": true,
+      "environmentVariables": {
+        "DOTNET_ENVIRONMENT": "Development"
+      }
+    }
+  }
+}

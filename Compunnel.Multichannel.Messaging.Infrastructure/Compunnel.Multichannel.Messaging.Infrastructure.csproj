@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+	  <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="7.0.4" />
+	  <PackageReference Include="RabbitMQ.Client" Version="6.5.0" />
+	  <PackageReference Include="Twilio" Version="6.11.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Compunnel.Multichannel.Messaging.Application\Compunnel.Multichannel.Messaging.Application.csproj" />
+    <ProjectReference Include="..\Compunnel.Multichannel.Messaging.Domain\Compunnel.Multichannel.Messaging.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="MessageProcessor\" />
+  </ItemGroup>
+
+</Project>
